@@ -55,20 +55,13 @@ def assistant():
     query = listen()
     if query in qa_dict:
         speak(qa_dict[query])
-<<<<<<< HEAD
         st.write("Assistant: "+qa_dict[query])
-=======
->>>>>>> b25247f10eefb646b1c44cfc8a8da7fc6b9b982e
     else:
         speak("I'm sorry, I didn't understand that.")
 
 def main():
     st.title("Speech Recognition Chatbot")
-<<<<<<< HEAD
     st.write("Speak when Listning... on Screen")
-=======
-    st.write("Click the button below to start the chat!")
->>>>>>> b25247f10eefb646b1c44cfc8a8da7fc6b9b982e
     if st.button("Start Chat"):
         assistant()
 
